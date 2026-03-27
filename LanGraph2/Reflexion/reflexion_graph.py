@@ -44,6 +44,16 @@ response = app.invoke(
 print(response[-1].tool_calls[0]["args"]["answer"])
 print(response, "response")
 
+#Reflexion adds a reflection/critique step:
+# START
+#   ↓
+# [reason] → has tool calls?
+#   ├── YES → [act] → back to [reason]
+#   └── NO  → [reflect]  ← ✨ NEW
+#                 ↓
+#          is answer good enough?
+#           ├── NO  → back to [reason]  (retry with feedback)
+#           └── YES → [final] → END
 
 
 
