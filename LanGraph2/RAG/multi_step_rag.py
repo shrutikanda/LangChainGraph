@@ -329,18 +329,18 @@ display(
     )
 )
 
-input_data = {"question": HumanMessage(content="What does the company Apple do?")}
-graph.invoke(input=input_data, config={"configurable": {"thread_id": 1}})
+input_data = {"question": HumanMessage(content="How large is Peak Performance Gym?")}
+graph.invoke(input=input_data, config={"configurable": {"thread_id": 66}})
 
 
-input_data = {
-    "question": HumanMessage(
-        content="What is the cancelation policy for Peak Performance Gym memberships?"
-    )
-}
-graph.invoke(input=input_data, config={"configurable": {"thread_id": 2}})
+# input_data = {
+#     "question": HumanMessage(
+#         content="What is the cancelation policy for Peak Performance Gym memberships?"
+#     )
+# }
+# graph.invoke(input=input_data, config={"configurable": {"thread_id": 2}})
 
-input_data = {
-    "question": HumanMessage(content="Who founded Peak Performance Gym?")
-}
-graph.invoke(input=input_data, config={"configurable": {"thread_id": 3}})
+# input_data = {
+#     "question": HumanMessage(content="Who founded Peak Performance Gym?")
+# }
+# graph.invoke(input=input_data, config={"configurable": {"thread_id": 3}})
